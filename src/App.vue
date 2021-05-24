@@ -1,6 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <w-app>
+    <w-button>my button</w-button>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </w-app>
 </template>
 
 <script>
