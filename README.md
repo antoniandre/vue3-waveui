@@ -1,5 +1,5 @@
-# vue3-waveui
-
+# Wave UI on Vue 3 with vue-cli
+This is a demo repo to showcase how to Wave UI runs on Vue 3, with SCSS variables overrides and tree-shaking.
 ## Project setup
 ```
 npm install
@@ -14,11 +14,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
