@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+// import WaveUI from 'wave-ui/src/wave-ui'
 
 // Customizable: a la carte & tree-shakeable.
 // --------------------------------------------------------
