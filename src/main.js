@@ -14,6 +14,7 @@ app.use(WaveUI, {
 })
 // --------------------------------------------------------
 
+// eslint-disable-next-line no-new
 new WaveUI(app, {
   // Some Wave UI options.
 })
