@@ -1,18 +1,27 @@
 <template>
   <w-app>
     <w-button>my button</w-button>
+    <p>Windows size : {{ waveUI.breakpoint.name }}</p>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </w-app>
 </template>
 
 <script>
+import { inject } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  setup () {
+    const waveUI = inject('wave-ui')
+
+    return {
+      waveUI
+    }
   }
 }
 </script>
