@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, reactive } from 'vue'
 import App from './App.vue'
 // import WaveUI from 'wave-ui/src/wave-ui'
 
@@ -15,8 +15,10 @@ app.use(WaveUI, {
 // --------------------------------------------------------
 
 // eslint-disable-next-line no-new
-new WaveUI(app, {
+const waveUI = new WaveUI(app, {
   // Some Wave UI options.
 })
 
-app.mount('#app')
+app
+  .provide('wave-ui', reactive(waveUI))
+  .mount('#app')
